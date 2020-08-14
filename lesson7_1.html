@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
         .container {
             display: flex;
             flex-direction: column;
-            height: 400px;
             width: 300px;
             background-color: blanchedalmond;
             transition: ease all .35s;
@@ -49,28 +54,31 @@
                 9px 9px 0px 0px #008080;
             transform: translate(-9px, -9px)
         }
+        
         img {
-            display: flex;
-            max-width: 288px; 
-            max-height: 310px;
- 
+            object-fit: cover;
+            width: 100%;
         }
+        
         h2 {
             color: black;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>МОЯ СТРАНЦИА</h1>
+        <h1>Моя Страница</h1>
         <div class="item-1">
-        <img src="picture-3.jpg" alt="">
+            <img src="picture-3.jpg" alt="Моя фотография">
         </div>
         <div class="item-2">
             <div class="info">
-                <a href="anketa.html">
-                    <h2>Моя Анкета</h2>
-                </a>
+                <h2>
+                    <a href="anketa.html">
+                        Моя Анкета
+                    </a>
+                </h2>
             </div>
             <div class="info"></div>
         </div>
