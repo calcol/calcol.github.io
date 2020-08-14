@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 300px;
+            background-color: blanchedalmond;
+            transition: ease all .35s;
+        }
+        .item-1 {
+            display: flex;
+            height: 100%;         
+            background-color: black;
+            margin: .4em;
+            color: white;
+        }
+        .item-2 {
+            display: flex;
+            justify-content: space-around;
+            height: 20%;
+        }
+        .info {
+            display: flex;
+            width: 50%;
+            margin: .4em;
+            background-color: cornflowerblue;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .container:hover {
+            box-shadow: 1px 1px 0px 0px #008080,
+                1px 2px 0px 0px #008080,
+                3px 3px 0px 0px #008080,
+                4px 4px 0px 0px #008080,
+                5px 5px 0px 0px #008080,
+                6px 6px 0px 0px #008080,
+                7px 7px 0px 0px #008080,
+                8px 8px 0px 0px #008080,
+                9px 9px 0px 0px #008080;
+            transform: translate(-9px, -9px)
+        }
+        img {
+            display: flex;
+            max-width: 288px; 
+            max-height: 310px;
+ 
+        }
+        h2 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>МОЯ СТРАНЦИА</h1>
+        <div class="item-1">
+        <img src="picture-3.jpg" alt="">
+        </div>
+        <div class="item-2">
+            <div class="info">
+                <a href="anketa.html">
+                    <h2>Моя Анкета</h2>
+                </a>
+            </div>
+            <div class="info"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
