@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 урок</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: plum;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            background-color: purple;
+            padding: .5em;
+            border-radius: 10px;
+            transition: all ease .20s;
+        }
+        form input {
+            margin: .7em 0;
+            padding: .5em;
+            border-radius: 5px;
+        }
+        form label {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            font-family: sans-serif;
+        }
+        input[type=submit] {
+            padding: .5em;
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+            border: 0;
+            font-size: 1em;
+            border-radius: 6px;
+        }
+
+        form:hover {
+            box-shadow: 1px 1px 0 0 purple,
+            2px 2px 0 0 purple,
+            3px 3px 0 0 purple,
+            4px 4px 0 0 purple,
+            5px 5px 0 0 purple,
+            6px 6px 0 0 purple;
+            transform: translate(-6px, -6px);
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="name">Введите Имя:</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Ваш email:</label>
+        <input type="text" name="email" id="email">
+        <input type="submit" value="Поиск">
+    </form>
+</body>
+</html>
