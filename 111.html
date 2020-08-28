@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Навбар</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            background-color: cornflowerblue;
+            overflow: hidden;
+            margin: 0;
+        }
+        .navbar {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .cat1, .cat2, .cat3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: cornsilk;
+            font-weight: bold;
+            font-size: 2em;
+            padding: .75em;
+            width: 100%;
+            transition: all ease .5s;          
+        }
+        .cat1:hover, .cat2:hover, .cat3:hover {
+            width: 200%;
+        }        
+        .cat1 {
+            background-color: black;
+        }
+        .cat2 {
+            background-color: chocolate;
+        }
+        .cat3 {
+            background-color: bisque;
+        }     
+    </style>
+</head>
+
+<body>
+<div class="navbar">
+    <div class="cat1">
+        Новости
+    </div>
+    <div class="cat2">
+        Картинки
+    </div>
+    <div class="cat3">
+        Информация
+    </div>
+</div>
+</body>
+
+</html>
