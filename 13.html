@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gev-gev/title>
+    <style>
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .bin {
+        overflow-x: hidden;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('night.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .bottom {
+        overflow-x: hidden;
+        height: 100vh;
+        display: block;
+        background-image: url('night.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }    
+    @keyframes down {
+        0% {
+            top: -5px;
+        }        
+        100% {
+            top: 200vh;
+        }
+    }  
+    .star {
+        position: absolute;
+        background-color: white;
+        top: 0;
+    }
+    .star:nth-child(1) {
+        width: 4px;
+        height: 4px;
+        left: 4vw;
+        animation: down 5s .2s linear infinite;
+    }
+    .star:nth-child(2) {
+        width: 4px;
+        height: 4px;
+        left: 18vw;
+        animation: down 7.9s 5s linear infinite;
+    }
+    .star:nth-child(3) {
+        width: 4px;
+        height: 4px;
+        left: 48vw;
+        animation: down 6.25s 2s linear infinite;
+    }
+    .star:nth-child(4) {
+        width: 4px;
+        height: 4px;
+        left: 68vw;
+        animation: down 6s .9s linear infinite;
+    }
+    .star:nth-child(5) {
+        width: 4px;
+        height: 4px;
+        left: 87vw;
+        animation: down 5.7s 1s linear infinite;
+    }                   
+    
+    </style>
+</head>
+<body>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="bin"></div>
+    <div class="bottom"></div>  
+</body>
+</html>
