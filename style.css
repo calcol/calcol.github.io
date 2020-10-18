@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1.5fr 4fr 3fr 2fr;
+    grid-template-columns: 1fr 1.2fr 2fr;
+    grid-template-areas: 
+    "main main nav"
+    "main main icecream"
+    "tasty healthy icecream"
+    "footer footer icecream";
+}
+main {
+    background-color: ;
+    grid-area: main;
+    position: relative;
+}
+.tasty {
+    grid-area: tasty;
+    background-color: cadetblue;
+}
+.healthy {
+    grid-area: healthy;  
+    background-color: darkslategrey;  
+}
+footer {
+    grid-area: footer; 
+    background-color: cornflowerblue;
+}
+nav {
+    grid-area: nav;
+    background-color: whitesmoke;
+}
+ 
+  
+.icecream {
+    background-image: url("yT8X6ghceJc.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: lightgreen; 
+    grid-area: icecream;
+
+}
+.logo span {
+    font-family: "Pacifico" , cursive;
+    color: whitesmoke;
+    font-size: 75px;
+    padding: 0 50px;
+    cursor: pointer;
+}
+.text, h5, span {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+    font-size: 25px;
+    padding: 0 50px;
+}
+.tasty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.healthy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around ; 
