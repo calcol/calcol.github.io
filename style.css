@@ -15,28 +15,33 @@ body{
     "footer footer icecream";
 }
 main {
-    background-color: ;
+    background-color: #a7ff83;
     grid-area: main;
     position: relative;
 }
 .tasty {
     grid-area: tasty;
-    background-color: cadetblue;
+    background-color: #17b978;
+    
 }
 .healthy {
     grid-area: healthy;  
-    background-color: darkslategrey;  
+    background-color: #086972;
+    background-repeat: no-repeat;
+    font-family: 'Dancing Script', cursive;
 }
 footer {
     grid-area: footer; 
-    background-color: cornflowerblue;
+    background-color: #071a52;
+    font-family: 'Dancing Script', cursive;
+    color: whitesmoke;
 }
 nav {
     grid-area: nav;
-    background-color: whitesmoke;
+    background-color: #17b978;
 }
- 
-  
+
+
 .icecream {
     background-image: url("yT8X6ghceJc.jpg");
     background-size: cover;
@@ -52,7 +57,7 @@ nav {
     padding: 0 50px;
     cursor: pointer;
 }
-.text, h5, span {
+.text, span {
     font-family: "Lato", sans-serif;
     font-weight: bold;
     color: black;
@@ -78,9 +83,9 @@ footer {
      display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-around ; 
+    justify-content: space-around ;
