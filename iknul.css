@@ -1,0 +1,60 @@
+body {
+    background-color: darkslateblue;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.one {
+    background-image: url(kn_1.png);
+    background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: left;
+        height: 100%;
+        width: 25%;
+        animation: onloadLeft 1s linear;
+        position: absolute;
+        left: 10%;
+}
+h1 {
+    font-family: 'Grandstander', cursive;
+    color: white;
+    align-self: flex-start;
+}
+.you {
+position: relative;
+height: 45%;
+width: 100vh;
+}
+.two {
+    background-image: url(kn_2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        height: 100%;
+        width: 25%;
+        animation: onloadRight 1s linear;
+        position: absolute;
+        right: 10%;
+}
+@keyframes one {
+    0%{
+        opacity: 0;
+        right: -300px;
+    }
+   100% {
+      opacity: 2; 
+      right: 20%;
+   }
+}
+@keyframes two {
+    0%{
+        opacity: 0;
+        right: -300px;
+    }
+   100% {
+      opacity: 2; 
+      right: 20%;
+   }
+}
