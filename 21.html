@@ -7,16 +7,17 @@
 </head>
 <body>
     <script>
-        let first = Number(prompt('Введите первое число:'));
-        let second = Number(prompt('Введите второе число:'));
-        let result = first + second
-
-        if (result > 1000) {
-            alert('Сумма этих чисел: ' + result)
-        } else {
-            result = first * second
-            alert('Произведение этих чисел: ' + result)
+        let riddle = 'Чем можно поделиться один раз ?'
+        let answer = 'секрет'
+        alert ('Отгадай загадку -' + riddle)
+        let twitch = ''
+        while (twitch !== answer ) {
+            twitch = prompt('Ваш ответ').toLowerCase()
+            if (twitch !== answer) {
+                alert('Ответ не правильный попбробуй ещё раз')
+            }
         }
+        alert(twitch+ 'Ответ правильный')
     </script>
 </body>
 </html>
