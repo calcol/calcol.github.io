@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
+    
 }
 .grid-container {
     display: grid;
@@ -15,30 +16,33 @@ body{
     "footer footer icecream";
 }
 main {
-    background-color: #a7ff83;
+   
     grid-area: main;
     position: relative;
+    background-color: #0072ea;
 }
 .tasty {
     grid-area: tasty;
-    background-color: #17b978;
+   background-color: #3f6dc6;
     
 }
 .healthy {
     grid-area: healthy;  
-    background-color: #086972;
     background-repeat: no-repeat;
     font-family: 'Dancing Script', cursive;
+    background-color: #7f68a2;
+    
 }
 footer {
     grid-area: footer; 
-    background-color: #071a52;
+    background-color: #be637e;
     font-family: 'Dancing Script', cursive;
     color: whitesmoke;
 }
 nav {
     grid-area: nav;
-    background-color: #17b978;
+    background-color: #ca6277;
+    
 }
 
 
@@ -46,7 +50,7 @@ nav {
     background-image: url("yT8X6ghceJc.jpg");
     background-size: cover;
     background-position: center;
-    background-color: lightgreen; 
+    background-color: #fd5e5a;
     grid-area: icecream;
 
 }
@@ -73,19 +77,29 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Nerko One', cursive;
 }
 .healthy {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Nerko One', cursive;
+    Э
 }
 footer {
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-
+    font-family: 'Nerko One', cursive;
 }
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-around ;
+    justify-content: space-around;
+    font-family: 'Nerko One', cursive;
+}   
+
+
+h3 {
+    font-family: 'Nerko One', cursive;
+}   
