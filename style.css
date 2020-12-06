@@ -2,7 +2,9 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
-    
+    background-image: url(freeimg_82104617freejpg850.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .grid-container {
     display: grid;
@@ -19,38 +21,35 @@ main {
    
     grid-area: main;
     position: relative;
-    background-color: #0072ea;
+   
 }
 .tasty {
     grid-area: tasty;
-   background-color: #3f6dc6;
+   color: whitesmoke;
     
 }
 .healthy {
     grid-area: healthy;  
     background-repeat: no-repeat;
     font-family: 'Dancing Script', cursive;
-    background-color: #7f68a2;
+    color: whitesmoke;
     
 }
 footer {
     grid-area: footer; 
-    background-color: #be637e;
     font-family: 'Dancing Script', cursive;
     color: whitesmoke;
 }
 nav {
     grid-area: nav;
-    background-color: #ca6277;
+    color: whitesmoke;
     
 }
 
 
 .icecream {
-    background-image: url("yT8X6ghceJc.jpg");
     background-size: cover;
     background-position: center;
-    background-color: #fd5e5a;
     grid-area: icecream;
 
 }
@@ -64,7 +63,7 @@ nav {
 .text, span {
     font-family: "Lato", sans-serif;
     font-weight: bold;
-    color: black;
+    color: whitesmoke;
 }
 .text {
     position: absolute;
@@ -84,7 +83,6 @@ nav {
     align-items: center;
     justify-content: center;
     font-family: 'Nerko One', cursive;
-    Э
 }
 footer {
     display: flex;
@@ -100,6 +98,10 @@ nav {
 }   
 
 
-h3 {
+h2 {
     font-family: 'Nerko One', cursive;
+    color: whitesmoke;
 }   
+a {
+    color: whitesmoke;
+}

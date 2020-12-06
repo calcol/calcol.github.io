@@ -7,17 +7,18 @@
 </head>
 <body>
     <script>
-        let riddle = 'Чем можно поделиться один раз ?'
-        let answer = 'секрет'
-        alert ('Отгадай загадку -' + riddle)
-        let twitch = ''
-        while (twitch !== answer ) {
-            twitch = prompt('Ваш ответ').toLowerCase()
-            if (twitch !== answer) {
-                alert('Ответ не правильный попбробуй ещё раз')
-            }
+        function slon(answer) {
+            if (answer === null){
+                return false
+             }
+        return true
         }
-        alert(twitch+ 'Ответ правильный')
+        let userInput = prompt('Купи 🐘')
+        let answer =  slon(userInput)
+        while (answer) {
+            userInput = prompt('Все говорят' + userInput +'а ты купи 🐘')
+            answer = slon(userInput)
+        }
     </script>
 </body>
 </html>
