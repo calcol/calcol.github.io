@@ -6,19 +6,32 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>ERROR</h1>
+    <p>ERROR</p>
     <script>
-        function slon(answer) {
-            if (answer === null){
-                return false
-             }
-        return true
+        let heading = document.querySelector('h1'); 
+        let para = document.querySelector('p'); 
+
+        function text(element, t) {
+            element.textContent = t
         }
-        let userInput = prompt('Купи 🐘')
-        let answer =  slon(userInput)
-        while (answer) {
-            userInput = prompt('Все говорят' + userInput +'а ты купи 🐘')
-            answer = slon(userInput)
+
+        function style(element, s) {
+            element.style.color = s
         }
+
+        let textInput = prompt('Введите текст для заголовка: ');
+        text(heading, textInput);
+
+        textInput = prompt('Введите цвет для заголовка: ');
+        style(heading, textInput);
+
+        textInput = prompt('Введите текст для параграфа: ');
+        text(para, textInput);
+        
+        textInput = prompt('Введите цвет для параграфа: ');
+        style(para, textInput);
     </script>
+    
 </body>
 </html>
