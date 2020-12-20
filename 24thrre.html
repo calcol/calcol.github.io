@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let one =  function (string) {
+        let tmp = ''
+        for ( let i = string.length; i > 0; i--){
+            tmp += string [i - 1]
+          }
+    return tmp
+    } 
+    let userInput = prompt ('Введите текст и переверну его')
+    alert('Результат:' + one(userInput))
+</script>
+</body>
+</html>

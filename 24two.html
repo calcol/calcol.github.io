@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pizza = function (pizza, people) {
+            let party = ''
+            let food = ''
+            for (let i = 0; i< people; i++){
+                party += '☺'
+            }
+            for (let i = 0; i< people; i++){
+                party += '🍕'
+            }
+            return[party, food]
+        }
+
+let peopleInput= Number(prompt('Сколько человек :'))
+let pizzaInput= Number(prompt('Сколько пицц :'))
+let people = pizza(pizzaInput, peopleInput)[0]
+let food = pizza(pizzaInput, peopleInput)[1]
+alert ('Будет людей -' + people + 'и пицц' + food)
+    </script>
+</body>
+</html>
